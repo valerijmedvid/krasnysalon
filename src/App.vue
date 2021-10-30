@@ -1,32 +1,86 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div>
+    <div class="banner">
+      <div class="container group">
+        <p class="logo">
+          <router-link to="/">logo</router-link>
+        </p>
+        <ul class="menu">
+          <template v-for="menu in $router.options.routes">
+            <li :key="menu.index" :class="{ dropdown: 'children' in menu }" v-if="!menu.metadata.hide">
+              <router-link :to="menu.path">
+                {{ menu.metadata.title }}
+              </router-link>
+              <div v-if="'children' in menu" class="dropdown-content">
+                <router-link v-for="submenu in menu.children" :key="submenu.index" :to="submenu.path">
+                  {{ submenu.metadata.title }}
+                </router-link>
+              </div>
+            </li>
+          </template>
+        </ul>
+        <ul class="menu2">
+          <template v-for="menu in $router.options.routes">
+            <li v-if="!menu.metadata.hide" :key="menu.index">
+              <router-link v-if="menu.name != 'services'" :to="menu.path">
+                {{ menu.metadata.title }}
+              </router-link>
+              <div v-else>
+                <li v-for="submenu in menu.children" :key="submenu.index">
+                  <router-link :to="submenu.path">
+                    {{ submenu.metadata.title }}
+                  </router-link>
+                </li>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </div>
     </div>
-    <router-view />
+    <div class="container">
+      <router-view />
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="foot left">
+          <p>
+            Adresa salonu: <br />
+            Topolová 2151 <br />
+            Nymburk 288 02
+            <br />
+            <br />
+          </p>
+        </div>
+        <div class="foot left">
+          <p>
+            Fakturační adresa: <br />
+            Dominika Urbanová <br />
+            Kladenská 604 <br />
+            Přelouč 535 01
+          </p>
+        </div>
+        <div class="foot left">
+          <p>
+            Kontaktní údaje:<br />
+            Dominika Urbanová<br />
+            <a href="tel:+420606025605">+420 606 025 605</a>
+            <br />
+            <a href="mailto:dominika@krasnysalon.cz">dominika@krasnysalon.cz</a>
+          </p>
+        </div>
+        <div class="foot left">
+          <p>Copyright&nbsp;©&nbsp; 2019</p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+@import "./assets/scss/style.scss";
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+a {
+  cursor: pointer;
 }
 </style>
