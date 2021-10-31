@@ -73,27 +73,37 @@ export default {
     return {
       images: [
         {
+          src: require("@/assets/images/lashes/rasy10.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy11.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy12.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy13.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy14.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
           src: require("@/assets/images/lashes/rasy6.jpg"),
           description: "Krasyn salon | Prodlužování řas",
           alt: "Krasyn salon | Prodlužování řas",
         },
         {
           src: require("@/assets/images/lashes/rasy8.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy7.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy5.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy9.jpg"),
           description: "Krasyn salon | Prodlužování řas",
           alt: "Krasyn salon | Prodlužování řas",
         },
@@ -123,7 +133,7 @@ export default {
 <style>
 .gallery a {
   display: inline-block;
-  width: 32%;
+  width: 48%;
   height: auto;
 }
 </style>
