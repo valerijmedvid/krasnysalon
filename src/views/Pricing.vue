@@ -144,7 +144,7 @@
             {{ service.name }}<small>{{ service.note }}</small>
           </td>
           <td style="text-align: right">{{ service.price1 }} Kč</td>
-          <td style="text-align: right">{{ service.price2 }} Kč</td>
+          <td style="text-align: right">{{ service.price2 }} <span v-if="service.price2">Kč</span></td>
         </tr>
       </template>
       <tr class="empty">
@@ -251,7 +251,7 @@ export default {
         { name: "Horní ret", note: "", price1: 150, price2: 110 },
         { name: "Brada", note: "", price1: 150, price2: 110 },
         { name: "Tváře", note: "", price1: 200, price2: 150 },
-        { name: "Nosní dírky", note: "", price1: 150, price2: 120 },
+        { name: "Nosní dírky", note: "", price1: 150 },
         { name: "Celý obličej", note: "(obočí, ret, tváře, brada)", price1: 600, price2: 400 },
       ],
       lyconBodyServices: [
