@@ -37,10 +37,9 @@
       </p>
 
       <p>
-        <strong
-          >Ke kosmetickému ošetření máte u nás možnost dopřát si parafínový zábal na ruce za zvýhodněnou cenu
-          50,-</strong
-        >
+        <strong>
+          Ke kosmetickému ošetření máte u nás možnost dopřát si parafínový zábal na ruce za zvýhodněnou cenu 50,-
+        </strong>
       </p>
     </div>
   </article>

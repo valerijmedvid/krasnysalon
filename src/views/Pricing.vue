@@ -135,7 +135,7 @@
           <p>Epilace obličeje<small>(samostržný vosk Hot Wax Lycon) </small></p>
         </td>
         <td style="text-align: right"><strong>samostatně</strong></td>
-        <td style="text-align: right"><strong>v rámci ošetře</strong></td>
+        <td style="text-align: right"><strong>v rámci ošetření</strong></td>
       </tr>
       <template v-for="service in lyconFaceServices">
         <tr :key="service.index">

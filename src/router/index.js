@@ -42,6 +42,12 @@ const routes = [
         component: () => import("../views/Cosmetic.vue"),
         metadata: { title: "Kosmetika SynCare" },
       },
+      {
+        path: "/lycon",
+        name: "lycon",
+        component: () => import("../views/Lycon.vue"),
+        metadata: { title: "Lycon" },
+      },
     ],
   },
   {
