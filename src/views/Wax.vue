@@ -9,9 +9,9 @@
         schopností zadržovat teplo. Parafín prohřívá, uvolňuje, zvyšuje krevní oběh a otevírá póry. Jeho účinky jsou
         zdravotní i estetické.
       </p>
-      <silentbox-single :src="require('@/assets/images/wax/parafin.jpg')" description="Kosmetika SynCare">
-        <img :src="require('@/assets/images/wax/parafin.jpg')" class="right" />
-      </silentbox-single>
+      <div class="right">
+        <silent-box :image="article_images[0]" />
+      </div>
 
       <h2>Účinky parafínového zábalu</h2>
       <p>
@@ -44,5 +44,16 @@
 <script>
 export default {
   name: "Wax",
+  data() {
+    return {
+      article_images: [
+        {
+          src: require("@/assets/images/wax/parafin.jpg"),
+          description: "Krasyn salon | Parafín",
+          alt: "Krasyn salon | Parafín",
+        },
+      ],
+    }
+  },
 }
 </script>

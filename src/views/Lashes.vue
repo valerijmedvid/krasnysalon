@@ -15,9 +15,9 @@
         mnohonásobně většího objemu. Jsou odolné vůči vodě, to znamená, že běžné aktivity jako sport, sprchování či
         plavání nemají na jejich vzhled a pevnost vliv.
       </p>
-      <silentbox-single :src="require('@/assets/images/lashes/rasy4.jpg')" description="Prodlužování řas">
-        <img :src="require('@/assets/images/lashes/rasy4.jpg')" class="right" />
-      </silentbox-single>
+      <div class="right">
+        <silent-box :image="article_images[0]" />
+      </div>
 
       <h2>Jak dlouho prodloužené řasy vydrží?</h2>
       <p>
@@ -34,9 +34,8 @@
         aplikace se pohybuje v rozmezí 2-3 hodiny, záleží na hustotě řas. Doplnění trvá zhruba 1,5 hodiny. Celá aplikace
         je naprosto bezbolestná.
       </p>
-      <silentbox-single :src="require('@/assets/images/lashes/rasy2.jpg')" description="Prodlužování řas">
-        <img :src="require('@/assets/images/lashes/rasy2.jpg')" class="left" />
-      </silentbox-single>
+
+      <silent-box :image="article_images[1]" class="left" />
 
       <h2>Jak o řasy pečovat?</h2>
       <p>
@@ -48,14 +47,12 @@
         přípravkům v okolí očí.
       </p>
       <p>
-        <strong
-          >Veškeré informace ohledně aplikace a následné péče obdržíte při návštěvě salonu, kde Vám zodpovíme i případné
-          dotazy.</strong
-        >
+        <strong>
+          Veškeré informace ohledně aplikace a následné péče obdržíte při návštěvě salonu, kde Vám zodpovíme i případné
+          dotazy.
+        </strong>
       </p>
-      <silentbox-single :src="require('@/assets/images/lashes/rasy3.jpg')" description="Prodlužování řas">
-        <img :src="require('@/assets/images/lashes/rasy3.jpg')" class="right" />
-      </silentbox-single>
+      <silent-box :image="article_images[2]" class="right" />
 
       <h2>UPOZORNĚNÍ PRO KLIENTKY!</h2>
       <p>
@@ -64,45 +61,69 @@
         takovém stavu, který umožní plnohodnotné doplnění. Není dobré mít na očích různé typy řas a adheziv. Po šetrném
         odstranění Vám aplikujeme nový set řas s ohledem na stav řas přírodních.
       </p>
-
-      <silentbox-group>
-        <silentbox-item
-          :src="require('@/assets/images/lashes/rasy6.jpg')"
-          description="Krasyn salon | Prodlužování řas"
-        >
-          <img src="@/assets/images/lashes/rasy6.jpg" class="gallery" />
-        </silentbox-item>
-        <silentbox-item
-          :src="require('@/assets/images/lashes/rasy8.jpg')"
-          description="Krasyn salon | Prodlužování řas"
-        >
-          <img src="@/assets/images/lashes/rasy8.jpg" class="gallery" />
-        </silentbox-item>
-        <silentbox-item
-          :src="require('@/assets/images/lashes/rasy7.jpg')"
-          description="Krasyn salon | Prodlužování řas"
-        >
-          <img src="@/assets/images/lashes/rasy7.jpg" class="gallery" />
-        </silentbox-item>
-        <silentbox-item
-          :src="require('@/assets/images/lashes/rasy5.jpg')"
-          description="Krasyn salon | Prodlužování řas"
-        >
-          <img src="@/assets/images/lashes/rasy5.jpg" class="gallery" />
-        </silentbox-item>
-        <silentbox-item
-          :src="require('@/assets/images/lashes/rasy9.jpg')"
-          description="Krasyn salon | Prodlužování řas"
-        >
-          <img src="@/assets/images/lashes/rasy9.jpg" class="gallery" />
-        </silentbox-item>
-      </silentbox-group>
     </div>
+    <div class="gallery"><silent-box :gallery="images" /></div>
   </article>
 </template>
 
 <script>
 export default {
   name: "Lashes",
+  data() {
+    return {
+      images: [
+        {
+          src: require("@/assets/images/lashes/rasy6.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy8.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy7.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy5.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy9.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+      ],
+      article_images: [
+        {
+          src: require("@/assets/images/lashes/rasy4.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy2.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy3.jpg"),
+          description: "Krasyn salon | Prodlužování řas",
+          alt: "Krasyn salon | Prodlužování řas",
+        },
+      ],
+    }
+  },
 }
 </script>
+
+<style>
+.gallery a {
+  display: inline-block;
+  width: 32%;
+  height: auto;
+}
+</style>

@@ -3,9 +3,9 @@
     <h1>Kosmetika SynCare</h1>
     <div class="services">
       <h2>Co znamená SynCare?</h2>
-      <silentbox-single :src="require('@/assets/images/cosmetic/kosmetika1.jpg')" description="Kosmetika SynCare">
-        <img :src="require('@/assets/images/cosmetic/kosmetika1.jpg')" class="right" />
-      </silentbox-single>
+      <div class="right">
+        <silent-box :image="article_images[0]" />
+      </div>
 
       <p>
         SynCare je spojení latinské předpony SYN - pro a anglického slova CARE – péče. Vyjadřuje přesvědčení, že
@@ -21,9 +21,9 @@
         kosmetických salónů nejen v ČR a SR, ale i v Německu, Rakousku, Velké Británii a Řecku.
       </p>
 
-      <silentbox-single :src="require('@/assets/images/cosmetic/kosmetika2.jpg')" description="Kosmetika SynCare">
-        <img :src="require('@/assets/images/cosmetic/kosmetika2.jpg')" class="left" />
-      </silentbox-single>
+      <div class="left">
+        <silent-box :image="article_images[1]" />
+      </div>
 
       <p>
         Značka SynCare přináší na trh profesionální dermo a bio přípravky na hranici lékařské a estetické péče. Je
@@ -49,5 +49,21 @@
 <script>
 export default {
   name: "Cleanset",
+  data() {
+    return {
+      article_images: [
+        {
+          src: require("@/assets/images/cosmetic/kosmetika1.jpg"),
+          description: "Krasyn salon | Kosmetika SynCare",
+          alt: "Krasyn salon | Kosmetika SynCare",
+        },
+        {
+          src: require("@/assets/images/cosmetic/kosmetika2.jpg"),
+          description: "Krasyn salon | Kosmetika SynCare",
+          alt: "Krasyn salon | Kosmetika SynCare",
+        },
+      ],
+    }
+  },
 }
 </script>

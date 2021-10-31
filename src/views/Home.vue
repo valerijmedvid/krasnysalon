@@ -15,21 +15,44 @@
       <strong>přistupujeme individuálně</strong> a snažíme se vyjít vstříc přáním a požadavkům. Ke každému ošetření u
       nás <strong>zdarma obdržíte kávu nebo čaj</strong> a odpočinete si v příjemném prostředí.
     </p>
-    <!-- <silentbox-group>
-      <silentbox-item
-        :src="require('@/assets/images/home/salon1.jpg')"
-        description="Krasyn salon | Interiér"
-      ></silentbox-item>
-      <silentbox-item
-        :src="require('@/assets/images/home/salon2.jpg')"
-        description="Krasyn salon | Interiér"
-      ></silentbox-item>
-    </silentbox-group> -->
+    <div class="gall">
+      <silent-box :gallery="images" />
+    </div>
   </article>
 </template>
 
-<script setup>
+<script>
 export default {
-  name: "Lashes",
+  name: "Home",
+  data() {
+    return {
+      images: [
+        {
+          src: require("@/assets/images/home/salon1.jpg"),
+          description: "Krásný salon | Interiér",
+          alt: "Krásný salon | Interiér",
+        },
+        {
+          src: require("@/assets/images/home/salon2.jpg"),
+          description: "Krásný salon | Interiér",
+          alt: "Krásný salon | Interiér",
+        },
+      ],
+    }
+  },
 }
 </script>
+
+<style>
+.gall #silentbox-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.silentbox-item {
+  width: 48%;
+  height: auto;
+}
+</style>
