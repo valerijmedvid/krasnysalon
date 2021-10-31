@@ -32,13 +32,8 @@
       </p>
 
       <p>
-        Ke všem klientkám přistupujeme individuálně, protože každá pleť je jiná. Typ ošetření určujeme až po diagnóze
-        pleti, kterou zdarma provádíme v salonu.
-      </p>
-
-      <p>
         <strong>
-          Ke kosmetickému ošetření máte u nás možnost dopřát si parafínový zábal na ruce za zvýhodněnou cenu 50,-
+          Ke kosmetickému ošetření máte možnost dopřát si parafínový zábal na ruce za zvýhodněnou cenu 70,-
         </strong>
       </p>
     </div>
