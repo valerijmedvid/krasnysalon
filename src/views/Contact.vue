@@ -18,7 +18,8 @@
         Topolová 2151<br />
         Nymburk 288 02
       </p>
-      <p><strong>Otevírací doba:</strong> dle objednání</p>
+      <p><strong>Otevírací doba:</strong> Po-Čt dle objednání</p>
+      <p>(Objednání je možné v pracovní dny 9-18hod, o víkendu na sms ani hovory nereaguji, děkuji za pochopení.)</p>
     </div>
 
     <iframe
