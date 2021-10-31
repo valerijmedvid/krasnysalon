@@ -151,6 +151,8 @@
         <td><br /></td>
         <td></td>
       </tr>
+    </table>
+    <table class="lycon">
       <tr>
         <td>
           <p>Epilace těla<small>(samostržný vosk Hot Wax Lycon) </small></p>
@@ -164,6 +166,7 @@
           </td>
           <td><span></span></td>
           <td style="text-align: right">{{ service.price }} Kč</td>
+          <td><span></span></td>
         </tr>
       </template>
       <tr class="empty">
