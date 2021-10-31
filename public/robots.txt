@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://krasnysalon.cz/sitemap.xml
