@@ -5,19 +5,21 @@
       <p>
         Pokročilá technika prodlužování řas, odlišná od metody prodlužování „řasa na řasu“. Liší se tím, že se na jednu
         řasu aplikuje 2 a více ultra lehkých syntetických řas, které zbytečně nezatěžují přírodní řasy. Jsou jemné,
-        vypadají přirozeně a zároveň tvoří dokonalý objem. Pracujeme pouze s kvalitním materiálem od značky Blink
-        Lashes.
+        vypadají přirozeně a zároveň tvoří dokonalý objem.
       </p>
 
       <h2>Pro koho jsou prodloužené řasy vhodné?</h2>
-      <p>
-        Prodloužené řasy jsou vhodné i pro klientky, které mají vlastní řasy krátké nebo jemné a chtějí docílit
-        mnohonásobně většího objemu. Jsou odolné vůči vodě, to znamená, že běžné aktivity jako sport, sprchování či
-        plavání nemají na jejich vzhled a pevnost vliv.
-      </p>
       <div class="right">
-        <silent-box :image="article_images[0]" />
+        <silent-box :image="article_images[3]" />
       </div>
+      <p>
+        Prodlužování řas je vhodné pro ženy všech věkových kategorií, které chtějí dosáhnout skvělého vzhledu bez
+        použití řasenky. <br />
+        Prodlužování řas je vhodné i pro klientky, které mají vlastní řasy krátké nebo jemné a chtějí docílit
+        mnohonásobně většího objemu. I z velmi řídkých vlastních řas lze vytvořit nádherný objem. Je možné vytvořit od
+        přirozeného vzhledu až po velmi výrazný objem.Řasy jsou na dotek jemné a působí přirozeně. Jsou odolné vůči
+        vodě, to znamená, že běžné aktivity jako sport, sprchování či plavání nemají na jejich vzhled a pevnost vliv.
+      </p>
 
       <h2>Jak dlouho prodloužené řasy vydrží?</h2>
       <p>
@@ -31,35 +33,38 @@
         Klientka leží pohodlně na lehátku. Pokud nosíte kontaktní čočky, před prodloužením je vyjměte. Spodní víčko a
         řasy jsou chráněny kolagenovou podložkou, ta během aplikace pečuje o pokožku. Na přírodní řasy jsou postupně
         aplikovány syntetické řasy pomocí speciálního adheziva (lepidla), které je zdravotně nezávadné. Délka první
-        aplikace se pohybuje v rozmezí 2-3 hodiny, záleží na hustotě řas. Doplnění trvá zhruba 1,5 hodiny. Celá aplikace
-        je naprosto bezbolestná.
+        aplikace je cca 1,5h, záleží na hustotě řas. Doplnění trvá zhruba 1-1,5 hodiny. Celá aplikace je naprosto
+        bezbolestná.
       </p>
-
-      <silent-box :image="article_images[1]" class="left" />
+      <silent-box :image="article_images[2]" class="left" />
 
       <h2>Jak o řasy pečovat?</h2>
+
       <p>
         Prvních 24 hodin po aplikaci se vyhněte kontaktu s vodou, 48 hodin nenavštěvujte saunu. Řasové spoje by se po
         tak krátké době mohly narušit. Řasy pročesávejte speciálním kartáčkem, který obdržíte při první aplikaci. V
-        žádném případě na prodloužené řasy nepoužívejte řasenku! Ta se u kořínků spojuje s lepidlem a při doplnění je
-        třeba tento nános odstranit. Řasenku je možné používat pouze na spodní řasy. V případě nutnosti je možno použít
-        řasenku určenou přímo na prodloužené řasy. Nepoužívejte kleštičky na řasy, oči nemněte a vyhněte se olejovým
-        přípravkům v okolí očí.
+        žádném případě na prodloužené řasy nepoužívejte řasenku! Tu je možné používat pouze na spodní řasy.
+      </p>
+      <p>
+        Vyhněte se mechanickému dráždění oka jako je mnutí, spaní obličejem v polštáři, žádné tahání nebo trhání řas!
+        Řasové spoje nesmí přijít do kontaktu s mastnými či olejovými přípravky. K odličování používejte mycí gely či
+        odličovací přípravky bez obsahu olejů, ovšem neznamená to, že se budete při mytí řasám vyhýbat. Naopak je
+        potřeba řasám věnovat zvláštní péči a pravidelně je promývat vodou. Nevadí mýdlo či šampon (nesmí obsahovat
+        mastné složky), nebo lze zakoupit speciální čistící pěny na řasy. To zaručí, že budou řasy perfektně čisté a
+        připravené na další aplikaci řas.
       </p>
       <p>
         <strong>
-          Veškeré informace ohledně aplikace a následné péče obdržíte při návštěvě salonu, kde Vám zodpovíme i případné
+          Veškeré informace ohledně aplikace a následné péče obdržíte při návštěvě salonu, kde Vám zodpovím i případné
           dotazy.
         </strong>
       </p>
-      <silent-box :image="article_images[2]" class="right" />
 
       <h2>UPOZORNĚNÍ PRO KLIENTKY!</h2>
       <p>
-        Ráda bych všechny klientky upozornila, že pokud přicházíte s řasami od jiné stylistky, doplnění provádíme až po
-        osobní konzultaci, obzvlášť pokud máte prodloužení metodou řasa na řasu. Je totiž možné, že řasy nebudou v
-        takovém stavu, který umožní plnohodnotné doplnění. Není dobré mít na očích různé typy řas a adheziv. Po šetrném
-        odstranění Vám aplikujeme nový set řas s ohledem na stav řas přírodních.
+        V případě, že budete chtít k prodloužení řas např. úpravu obočí, či jinou doplňkovou službu, je potřeba mě
+        informovat předem, ideálně již při objednávání. Délka návštěvy se potom může protáhnout i o půl hodinu a to bez
+        předchozí domluvy bohužel není možné. Děkuji za pochopení.
       </p>
     </div>
     <div class="gallery"><silent-box :gallery="images" /></div>
@@ -74,55 +79,60 @@ export default {
       images: [
         {
           src: require("@/assets/images/lashes/rasy10.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
         {
           src: require("@/assets/images/lashes/rasy11.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
         {
           src: require("@/assets/images/lashes/rasy12.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
         {
           src: require("@/assets/images/lashes/rasy13.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy14.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
         {
           src: require("@/assets/images/lashes/rasy6.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
         {
           src: require("@/assets/images/lashes/rasy8.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy14.jpg"),
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
       ],
       article_images: [
         {
           src: require("@/assets/images/lashes/rasy4.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
         {
           src: require("@/assets/images/lashes/rasy2.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
         {
           src: require("@/assets/images/lashes/rasy3.jpg"),
-          description: "Krasyn salon | Prodlužování řas",
-          alt: "Krasyn salon | Prodlužování řas",
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
+        },
+        {
+          src: require("@/assets/images/lashes/rasy15.jpeg"),
+          description: "Krásný salon | Prodlužování řas",
+          alt: "Krásný salon | Prodlužování řas",
         },
       ],
     }

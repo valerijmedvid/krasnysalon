@@ -53,13 +53,13 @@ export default {
       article_images: [
         {
           src: require("@/assets/images/cosmetic/kosmetika1.jpg"),
-          description: "Krasyn salon | Kosmetika SynCare",
-          alt: "Krasyn salon | Kosmetika SynCare",
+          description: "Krásný salon | Kosmetika SynCare",
+          alt: "Krásný salon | Kosmetika SynCare",
         },
         {
           src: require("@/assets/images/cosmetic/kosmetika2.jpg"),
-          description: "Krasyn salon | Kosmetika SynCare",
-          alt: "Krasyn salon | Kosmetika SynCare",
+          description: "Krásný salon | Kosmetika SynCare",
+          alt: "Krásný salon | Kosmetika SynCare",
         },
       ],
     }

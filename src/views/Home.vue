@@ -9,12 +9,22 @@
     </p>
 
     <p>
-      Cílem naší práce je Vaše spokojenost. Provádíme
-      <strong>kvalitní a precizní práci</strong>, pracujeme pouze s <strong>profesionální kosmetikou</strong> a s
-      ověřenými produkty. Chceme, abyste od nás odcházely <strong>krásné a spokojené</strong>, proto ke každé klientce
-      <strong>přistupujeme individuálně</strong> a snažíme se vyjít vstříc přáním a požadavkům. Ke každému ošetření u
-      nás <strong>zdarma obdržíte kávu nebo čaj</strong> a odpočinete si v příjemném prostředí.
+      Cílem mé práce je Vaše spokojenost. Provádím kvalitní a precizní práci, pracuji pouze s profesionální kosmetikou a
+      s ověřenými produkty. Chci, abyste ode mě odcházely krásné a spokojené, proto ke každé klientce přistupuji
+      individuálně a snažím se vyjít vstříc přáním a požadavkům.
     </p>
+    <br />
+    <h2>UPOZORNĚNÍ PRO KLIENTKY!</h2>
+    <p>
+      Den před smluveným termínem zasílám informační sms, která má předejít situaci, že na svůj termín zapomenete.
+      Bohužel se stále setkávám s tím, že se na daný termín nikdo nedostaví, kolikrát bez omluvy. V takovém případě vás
+      dávám na pomyslný “blacklist” a další termín u mě nedostanete.
+    </p>
+    <p>
+      Pokud máte smluvený termín a víte, že se nemůžete dostavit, informujte mě prosím co nejdříve, abych měla prostor
+      pro případné přeobjednávání.
+    </p>
+    <p>Děkuji za pochopení.</p>
     <div class="gall">
       <silent-box :gallery="images" />
     </div>

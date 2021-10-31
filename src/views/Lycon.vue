@@ -73,13 +73,13 @@ export default {
       article_images: [
         {
           src: require("@/assets/images/lycon/lycon_logo.png"),
-          description: "Krasyn salon | Lycon",
-          alt: "Krasyn salon | Lycon",
+          description: "Krásný salon | Lycon",
+          alt: "Krásný salon | Lycon",
         },
         {
           src: require("@/assets/images/lycon/lycon_face.jpeg"),
-          description: "Krasyn salon | Lycon",
-          alt: "Krasyn salon | Lycon",
+          description: "Krásný salon | Lycon",
+          alt: "Krásný salon | Lycon",
         },
       ],
     }

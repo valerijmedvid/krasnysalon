@@ -49,8 +49,8 @@ export default {
       article_images: [
         {
           src: require("@/assets/images/wax/parafin.jpg"),
-          description: "Krasyn salon | Parafín",
-          alt: "Krasyn salon | Parafín",
+          description: "Krásný salon | Parafín",
+          alt: "Krásný salon | Parafín",
         },
       ],
     }

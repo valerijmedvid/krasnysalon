@@ -43,13 +43,19 @@ const routes = [
         metadata: { title: "Kosmetika SynCare" },
       },
       {
-        path: "/lycon",
-        name: "lycon",
+        path: "/epilace-lycon",
+        name: "epilace-lycon",
         component: () => import("../views/Lycon.vue"),
-        metadata: { title: "Lycon" },
+        metadata: { title: "Epilace Lycon" },
       },
     ],
   },
+  // {
+  //   path: "/partylite",
+  //   name: "partylite",
+  //   component: () => import("../views/PartyLite.vue"),
+  //   metadata: { title: "PartyLite" },
+  // },
   {
     path: "/cenik",
     name: "pricing",
