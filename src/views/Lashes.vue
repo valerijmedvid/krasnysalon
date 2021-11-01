@@ -36,7 +36,9 @@
         aplikace je cca 1,5h, záleží na hustotě řas. Doplnění trvá zhruba 1-1,5 hodiny. Celá aplikace je naprosto
         bezbolestná.
       </p>
-      <silent-box :image="article_images[2]" class="left" />
+      <div class="left">
+        <silent-box :image="article_images[2]" />
+      </div>
 
       <h2>Jak o řasy pečovat?</h2>
 

@@ -28,6 +28,7 @@
     <div class="gall">
       <silent-box :gallery="images" />
     </div>
+    <p></p>
   </article>
 </template>
 
@@ -61,7 +62,7 @@ export default {
   align-items: center;
 }
 
-.silentbox-item {
+.gall .silentbox-item {
   width: 48%;
   height: auto;
 }

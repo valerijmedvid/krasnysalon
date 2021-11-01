@@ -169,7 +169,7 @@ li.dropdown {
 }
 
 article {
-	margin-bottom: 15%;
+	margin-bottom: 25%;
 }
 
 article img {
@@ -261,11 +261,14 @@ tr.empty:hover {
 
 div.left {
 	float: left;
+	max-width: 45%;
+	padding-right: 1.3em;
 }
 
 div.right {
-	max-width: 50%;
+	max-width: 45%;
 	float: right;
+	padding-left: 1.3em;
 }
 
 .gallery #silentbox-gallery {
@@ -276,7 +279,6 @@ div.right {
 }
 
 .services img {
-	margin: 0 2%;
 	border: 1px #cccccc solid;
 }
 
