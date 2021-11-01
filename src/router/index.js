@@ -50,12 +50,12 @@ const routes = [
       },
     ],
   },
-  // {
-  //   path: "/partylite",
-  //   name: "partylite",
-  //   component: () => import("../views/PartyLite.vue"),
-  //   metadata: { title: "PartyLite" },
-  // },
+  {
+    path: "/partylite",
+    name: "partylite",
+    component: () => import("../views/PartyLite.vue"),
+    metadata: { title: "PartyLite" },
+  },
   {
     path: "/cenik",
     name: "pricing",
