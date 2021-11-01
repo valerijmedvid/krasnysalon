@@ -10,7 +10,7 @@
 
       <h2>Pro koho jsou prodloužené řasy vhodné?</h2>
       <div class="right">
-        <silent-box :image="article_images[3]" />
+        <silent-box :image="article_images[2]" />
       </div>
       <p>
         Prodlužování řas je vhodné pro ženy všech věkových kategorií, které chtějí dosáhnout skvělého vzhledu bez
@@ -37,7 +37,7 @@
         bezbolestná.
       </p>
       <div class="left">
-        <silent-box :image="article_images[2]" />
+        <silent-box :image="article_images[1]" />
       </div>
 
       <h2>Jak o řasy pečovat?</h2>
