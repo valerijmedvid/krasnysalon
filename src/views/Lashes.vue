@@ -117,11 +117,6 @@ export default {
       ],
       article_images: [
         {
-          src: require("@/assets/images/lashes/rasy4.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
           src: require("@/assets/images/lashes/rasy2.jpg"),
           description: "Krásný salon | Prodlužování řas",
           alt: "Krásný salon | Prodlužování řas",
