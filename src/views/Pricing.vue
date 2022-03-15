@@ -1,7 +1,7 @@
 <template>
   <article class="group">
     <h1>Ceník služeb</h1>
-    <p style="margin: 0; margin-bottom: 2em">Platný od 1.11.2021</p>
+    <p style="margin: 0; margin-bottom: 2em">Platný od 1.1.2022</p>
 
     <h2>Kosmetické ošetření</h2>
     <table>
@@ -249,20 +249,20 @@ export default {
       lyconFaceServices: [
         { name: "Obočí", note: "", price1: 180, price2: 120 },
         { name: "Horní ret", note: "", price1: 150, price2: 110 },
-        { name: "Brada", note: "", price1: 150, price2: 110 },
+        { name: "Brada", note: "", price1: 170, price2: 120 },
         { name: "Tváře", note: "", price1: 200, price2: 150 },
         { name: "Nosní dírky", note: "", price1: 150 },
         { name: "Celý obličej", note: "(obočí, ret, tváře, brada)", price1: 600, price2: 400 },
       ],
       lyconBodyServices: [
-        { name: "Podpaží", price: 300 },
+        { name: "Podpaží", price: 350 },
         { name: "Třísla", price: 350 },
       ],
       lyconBody2Services: [
-        { name: "Lýtka/stehna", price: 380 },
-        { name: "Nohy ¾", price: 450 },
-        { name: "Celé nohy", price: 600 },
-        { name: "Paže", price: 320 },
+        { name: "Lýtka/stehna", price: 400 },
+        { name: "Nohy ¾", price: 500 },
+        { name: "Celé nohy", price: 650 },
+        { name: "Paže", price: 390 },
       ],
     }
   },
