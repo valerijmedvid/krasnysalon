@@ -4,7 +4,7 @@
 
     <div class="contact">
       <p>
-        <strong>Dominika Urbanová</strong><br />
+        <strong>Dominika Medviď</strong><br />
         <a href="tel:+420606025605">+420 606 025 605</a><br />
         <a href="mailto:dominika@krasnysalon.cz">dominika@krasnysalon.cz</a><br />
       </p>

@@ -3,7 +3,7 @@
     <h1>Vítejte!</h1>
 
     <p>
-      Jmenuji se <strong>Dominika Urbanová</strong> a jsem majitelkou <strong>Krásného salonu</strong> v Nymburce.
+      Jmenuji se <strong>Dominika Medviď</strong> a jsem majitelkou <strong>Krásného salonu</strong> v Nymburce.
       Úspěšně jsem vystudovala střední školu v Pardubicích, obor <strong>kosmetické služby</strong> a od roku 2017
       provozuji kosmetický salon a dělám to co mě baví :-)
     </p>

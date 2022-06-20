@@ -55,7 +55,7 @@
         <div class="foot left">
           <p>
             Fakturační adresa: <br />
-            Dominika Urbanová <br />
+            Dominika Medviď <br />
             Kladenská 604 <br />
             Přelouč 535 01
           </p>
@@ -63,7 +63,7 @@
         <div class="foot left">
           <p>
             Kontaktní údaje:<br />
-            Dominika Urbanová<br />
+            Dominika Medviď<br />
             <a href="tel:+420606025605">+420 606 025 605</a>
             <br />
             <a href="mailto:dominika@krasnysalon.cz">dominika@krasnysalon.cz</a>
