@@ -49,7 +49,6 @@
             Františka Přítele 333 <br />
             Nymburk 288 02
             <br />
-            <br />
           </p>
         </div>
         <div class="foot left">
