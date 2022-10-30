@@ -46,7 +46,7 @@
         <div class="foot left">
           <p>
             Adresa salonu: <br />
-            Topolová 2151 <br />
+            Františka Přítele 333 <br />
             Nymburk 288 02
             <br />
             <br />
@@ -56,8 +56,8 @@
           <p>
             Fakturační adresa: <br />
             Dominika Medviď <br />
-            Kladenská 604 <br />
-            Přelouč 535 01
+            Františka Přítele 333 <br />
+            Nymburk 288 02
           </p>
         </div>
         <div class="foot left">

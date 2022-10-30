@@ -37,12 +37,6 @@ const routes = [
         metadata: { title: "Parafínový zábal na ruce" },
       },
       {
-        path: "/kosmetika",
-        name: "cosmetic",
-        component: () => import("../views/Cosmetic.vue"),
-        metadata: { title: "Kosmetika SynCare" },
-      },
-      {
         path: "/epilace-lycon",
         name: "epilace-lycon",
         component: () => import("../views/Lycon.vue"),

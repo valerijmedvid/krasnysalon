@@ -37,28 +37,7 @@ export default {
   name: "Home",
   data() {
     return {
-      images: [
-        {
-          src: require("@/assets/images/home/salon1.jpg"),
-          description: "Krásný salon | Exterier",
-          alt: "Krásný salon | Exterier",
-        },
-        {
-          src: require("@/assets/images/home/salon2.jpg"),
-          description: "Krásný salon | Interiér",
-          alt: "Krásný salon | Interiér",
-        },
-        {
-          src: require("@/assets/images/home/salon3.jpg"),
-          description: "Krásný salon | Interiér",
-          alt: "Krásný salon | Interiér",
-        },
-        {
-          src: require("@/assets/images/home/salon4.jpg"),
-          description: "Krásný salon | PartyLite",
-          alt: "Krásný salon | PartyLite",
-        },
-      ],
+      images: [],
     }
   },
 }

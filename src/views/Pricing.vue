@@ -1,51 +1,10 @@
 <template>
   <article class="group">
     <h1>Ceník služeb</h1>
-    <p style="margin: 0; margin-bottom: 2em">Platný od 1.1.2022</p>
-
-    <h2>Kosmetické ošetření</h2>
-    <table>
-      <tr v-for="service in cosmeticServices" :key="service.index">
-        <td>
-          <p>
-            <strong>{{ service.name }}</strong> <small>{{ service.interval }}</small> <br />
-            <small v-if="'note' in service">- {{ service.note }}</small>
-          </p>
-        </td>
-        <td>{{ service.price }} Kč</td>
-      </tr>
-      <tr class="empty">
-        <td><br /></td>
-        <td></td>
-      </tr>
-      <tr v-for="service in otherCosmeticServices" :key="service.index">
-        <td>
-          <p>
-            <strong>{{ service.name }}</strong> <small v-if="service.note">({{ service.note }})</small> <br />
-          </p>
-        </td>
-        <td>{{ service.price }} Kč</td>
-      </tr>
-    </table>
-
-    <h2>Úprava obočí</h2>
-    <table>
-      <tr v-for="service in eyebrowCosmeticServices" :key="service.index">
-        <td>
-          <p>
-            <strong>{{ service.name }}</strong> <small>{{ service.interval }}</small>
-          </p>
-        </td>
-        <td>{{ service.price }} Kč</td>
-      </tr>
-      <tr class="empty">
-        <td><br /></td>
-        <td></td>
-      </tr>
-    </table>
+    <p style="margin: 0; margin-bottom: 2em">Platný od 1.11.2022</p>
 
     <h2>Prodlužování řas</h2>
-    <h3>Volume řasy</h3>
+    <h3>Volume 3-6D</h3>
     <table>
       <template v-for="service in lashesVolumeServices.slice(0, 1)">
         <tr :key="service.index">
@@ -78,7 +37,7 @@
         </tr>
       </template>
     </table>
-    <h3>Mega volume 6-10D</h3>
+    <h3>Mega volume 7-10D</h3>
     <table>
       <template v-for="service in lashesMegaVolumeServices.slice(0, 1)">
         <tr :key="service.index">
@@ -125,6 +84,54 @@
           <td style="text-align: right">{{ service.price }} Kč</td>
         </tr>
       </template>
+    </table>
+
+    <h2>Laminace obočí</h2>
+    <table>
+      <tr v-for="service in eyebrowLaminationCosmeticServices" :key="service.index">
+        <td>
+          <p>
+            {{ service.name }}
+          </p>
+        </td>
+        <td>{{ service.price }} Kč</td>
+      </tr>
+      <tr class="empty">
+        <td><br /></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h2>Úprava obočí</h2>
+    <table>
+      <tr v-for="service in eyebrowCosmeticServices" :key="service.index">
+        <td>
+          <p>
+            {{ service.name }}
+          </p>
+        </td>
+        <td>{{ service.price }} Kč</td>
+      </tr>
+      <tr class="empty">
+        <td><br /></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h2>Parafínový zábal na ruce</h2>
+    <table>
+      <tr v-for="service in waxCosmeticServices" :key="service.index">
+        <td>
+          <p>
+            {{ service.name }}
+          </p>
+        </td>
+        <td>{{ service.price }} Kč</td>
+      </tr>
+      <tr class="empty">
+        <td><br /></td>
+        <td></td>
+      </tr>
     </table>
 
     <h2>Epilace Lycon</h2>
@@ -199,70 +206,55 @@ export default {
   name: "Pricing",
   data() {
     return {
-      cosmeticServices: [
-        {
-          name: "Základní ošetření",
-          interval: "90 min",
-          note: "úprava obočí, povrchové čištění, peeling, masáž obličeje, hluboké čištění, maska, krém",
-          price: 630,
-        },
-        {
-          name: "Ošetření mastné/smíšené pleti",
-          interval: "60 min",
-          note: "úprava obočí, povrchové čištění, peeling, hluboké čištění, maska, krém ",
-          price: 600,
-        },
-        {
-          name: "Ošetření suché/zralé pleti",
-          interval: "90-120 min",
-          note: "základní ošetření + pleťové sérum, ošetření dekoltu (masáž + maska)",
-          price: 730,
-        },
-      ],
-      otherCosmeticServices: [
-        { name: "Barvení řas", note: "pouze v rámci kosm. ošetření", price: 80 },
-        { name: "Barvení obočí v rámci kosm. ošetření", price: 80 },
-        { name: "Parafínový zábal na ruce", note: "pouze v rámci kosm. ošetření či při prodlužování řas", price: 70 },
-      ],
       eyebrowCosmeticServices: [
         {
-          name: "Barvení + úprava voskem Lycon",
-          interval: "15-30 min",
-          price: 260,
+          name: "Barvení oxidační barvou Refectocil + úprava voskem Lycon",
+          price: 300,
         },
       ],
-      lashesServices: [{ name: "Sundání řas", price: 150 }],
+      eyebrowLaminationCosmeticServices: [
+        {
+          name: "Laminace obočí",
+          price: 700,
+        },
+        {
+          name: "Laminace + barvení obočí oxidační barvou Nikk Molé + úprava voskem Lycon",
+          price: 790,
+        },
+      ],
+      lashesServices: [{ name: "Sundání řas", price: 250 }],
+      waxCosmeticServices: [{ name: "Pouze v rámci jiného ošetření (prodlužování řas či úprava obočí)", price: 100 }],
       lashesVolumeServices: [
-        { name: "Nový set", price: 1100 },
-        { name: "Doplnění: ", note: "po dvou týdnech", price: 470 },
-        { name: "", note: "po třech týdnech", price: 570 },
-        { name: "", note: "po čtyřech týdnech", price: 670 },
-        { name: "", note: "více než po měsíci ", price: 800 },
+        { name: "Nový set", price: 1200 },
+        { name: "Doplnění: ", note: "po dvou týdnech", price: 540 },
+        { name: "", note: "po třech týdnech", price: 640 },
+        { name: "", note: "po čtyřech týdnech", price: 740 },
+        { name: "", note: "více než po měsíci ", price: 870 },
       ],
       lashesMegaVolumeServices: [
-        { name: "Nový set", price: 1300 },
-        { name: "Doplnění: ", note: "po dvou týdnech", price: 570 },
-        { name: "", note: "po třech týdnech", price: 670 },
-        { name: "", note: "po čtyřech týdnech", price: 770 },
-        { name: "", note: "více než po měsíci ", price: 900 },
+        { name: "Nový set", price: 1400 },
+        { name: "Doplnění: ", note: "po dvou týdnech", price: 640 },
+        { name: "", note: "po třech týdnech", price: 740 },
+        { name: "", note: "po čtyřech týdnech", price: 840 },
+        { name: "", note: "více než po měsíci ", price: 970 },
       ],
       lyconFaceServices: [
-        { name: "Obočí", note: "", price1: 180, price2: 120 },
-        { name: "Horní ret", note: "", price1: 150, price2: 110 },
-        { name: "Brada", note: "", price1: 170, price2: 120 },
-        { name: "Tváře", note: "", price1: 200, price2: 150 },
-        { name: "Nosní dírky", note: "", price1: 150 },
-        { name: "Celý obličej", note: "(obočí, ret, tváře, brada)", price1: 600, price2: 400 },
+        { name: "Obočí", note: "", price1: 200, price2: 140 },
+        { name: "Horní ret", note: "", price1: 170, price2: 130 },
+        { name: "Brada", note: "", price1: 190, price2: 140 },
+        { name: "Tváře", note: "", price1: 220, price2: 170 },
+        { name: "Nosní dírky", note: "", price1: 180 },
+        { name: "Celý obličej", note: "(obočí, ret, tváře, brada)", price1: 650, price2: 580 },
       ],
       lyconBodyServices: [
-        { name: "Podpaží", price: 350 },
-        { name: "Třísla", price: 350 },
+        { name: "Podpaží", price: 380 },
+        { name: "Třísla", price: 400 },
       ],
       lyconBody2Services: [
-        { name: "Lýtka/stehna", price: 400 },
-        { name: "Nohy ¾", price: 500 },
-        { name: "Celé nohy", price: 650 },
-        { name: "Paže", price: 390 },
+        { name: "Lýtka/stehna", price: 440 },
+        { name: "Nohy ¾", price: 530 },
+        { name: "Celé nohy", price: 690 },
+        { name: "Paže", price: 420 },
       ],
     }
   },

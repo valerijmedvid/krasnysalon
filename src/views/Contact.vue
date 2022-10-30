@@ -15,7 +15,7 @@
     <div class="contact">
       <p>
         <strong>Krásný salon</strong><br />
-        Topolová 2151<br />
+        Františka Přítele 333<br />
         Nymburk 288 02
       </p>
       <p><strong>Otevírací doba:</strong> Po-Čt dle objednání</p>

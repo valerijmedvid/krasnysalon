@@ -44,12 +44,12 @@ export default {
     return {
       images: [
         {
-          src: require("@/assets/images/party/party1.jpg"),
+          src: require("@/assets/images/party/party1.jpeg"),
           description: "Krásný salon | PartyLite",
           alt: "Krásný salon | PartyLite",
         },
         {
-          src: require("@/assets/images/party/party2.jpg"),
+          src: require("@/assets/images/party/party2.jpeg"),
           description: "Krásný salon | PartyLite",
           alt: "Krásný salon | PartyLite",
         },
