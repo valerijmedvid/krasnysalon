@@ -6,8 +6,8 @@
     <h2>Prodlužování řas</h2>
     <h3>Volume 3-6D</h3>
     <table>
-      <template v-for="service in lashesVolumeServices.slice(0, 1)">
-        <tr :key="service.index">
+      <template v-for="service in lashesVolumeServices.slice(0, 1)" :key="service.index">
+        <tr>
           <td style="width: 100px">
             <p>
               {{ service.name }}
@@ -21,8 +21,8 @@
           <td style="text-align: right">{{ service.price }} Kč</td>
         </tr>
       </template>
-      <template v-for="service in lashesVolumeServices.slice(1)">
-        <tr :key="service.index">
+      <template v-for="service in lashesVolumeServices.slice(1)" :key="service.index">
+        <tr>
           <td style="width: 100px">
             <p>
               {{ service.name }}
@@ -39,8 +39,8 @@
     </table>
     <h3>Mega volume 7-10D</h3>
     <table>
-      <template v-for="service in lashesMegaVolumeServices.slice(0, 1)">
-        <tr :key="service.index">
+      <template v-for="service in lashesMegaVolumeServices.slice(0, 1)" :key="service.index">
+        <tr>
           <td style="width: 100px">
             <p>
               {{ service.name }}
@@ -54,8 +54,8 @@
           <td style="text-align: right">{{ service.price }} Kč</td>
         </tr>
       </template>
-      <template v-for="service in lashesMegaVolumeServices.slice(1)">
-        <tr :key="service.index">
+      <template v-for="service in lashesMegaVolumeServices.slice(1)" :key="service.index">
+        <tr>
           <td style="width: 100px">
             <p>
               {{ service.name }}
@@ -73,8 +73,8 @@
         <td><br /></td>
         <td></td>
       </tr>
-      <template v-for="service in lashesServices">
-        <tr :key="service.index">
+      <template v-for="service in lashesServices" :key="service.index">
+        <tr>
           <td style="width: 100px">
             <p>
               {{ service.name }}
@@ -84,22 +84,6 @@
           <td style="text-align: right">{{ service.price }} Kč</td>
         </tr>
       </template>
-    </table>
-
-    <h2>Laminace obočí</h2>
-    <table>
-      <tr v-for="service in eyebrowLaminationCosmeticServices" :key="service.index">
-        <td>
-          <p>
-            {{ service.name }}
-          </p>
-        </td>
-        <td>{{ service.price }} Kč</td>
-      </tr>
-      <tr class="empty">
-        <td><br /></td>
-        <td></td>
-      </tr>
     </table>
 
     <h2>Úprava obočí</h2>
@@ -144,8 +128,8 @@
         <td style="text-align: right"><strong>samostatně</strong></td>
         <td style="text-align: right"><strong>v rámci ošetření</strong></td>
       </tr>
-      <template v-for="service in lyconFaceServices">
-        <tr :key="service.index">
+      <template v-for="service in lyconFaceServices" :key="service.index">
+        <tr>
           <td>
             <p></p>
             {{ service.name }}<small>{{ service.note }}</small>
@@ -165,8 +149,8 @@
           <p>Epilace těla<small>(samostržný vosk Hot Wax Lycon) </small></p>
         </td>
       </tr>
-      <template v-for="service in lyconBodyServices">
-        <tr :key="service.index">
+      <template v-for="service in lyconBodyServices" :key="service.index">
+        <tr>
           <td>
             <p></p>
             {{ service.name }}
@@ -185,8 +169,8 @@
           <p>Epilace těla<small>(teplý vosk roll-on) </small></p>
         </td>
       </tr>
-      <template v-for="service in lyconBody2Services">
-        <tr :key="service.index">
+      <template v-for="service in lyconBody2Services" :key="service.index">
+        <tr>
           <td>
             <p></p>
             {{ service.name }}
@@ -196,69 +180,57 @@
         </tr>
       </template>
     </table>
-
-    <p></p>
   </article>
 </template>
 
-<script>
-export default {
-  name: "Pricing",
-  data() {
-    return {
-      eyebrowCosmeticServices: [
-        {
-          name: "Barvení oxidační barvou Refectocil + úprava voskem Lycon",
-          price: 300,
-        },
-      ],
-      eyebrowLaminationCosmeticServices: [
-        {
-          name: "Laminace obočí",
-          price: 700,
-        },
-        {
-          name: "Laminace + barvení obočí oxidační barvou Nikk Molé + úprava voskem Lycon",
-          price: 790,
-        },
-      ],
-      lashesServices: [{ name: "Sundání řas", price: 250 }],
-      waxCosmeticServices: [{ name: "Pouze v rámci jiného ošetření (prodlužování řas či úprava obočí)", price: 100 }],
-      lashesVolumeServices: [
-        { name: "Nový set", price: 1200 },
-        { name: "Doplnění: ", note: "po dvou týdnech", price: 540 },
-        { name: "", note: "po třech týdnech", price: 640 },
-        { name: "", note: "po čtyřech týdnech", price: 740 },
-        { name: "", note: "více než po měsíci ", price: 870 },
-      ],
-      lashesMegaVolumeServices: [
-        { name: "Nový set", price: 1400 },
-        { name: "Doplnění: ", note: "po dvou týdnech", price: 640 },
-        { name: "", note: "po třech týdnech", price: 740 },
-        { name: "", note: "po čtyřech týdnech", price: 840 },
-        { name: "", note: "více než po měsíci ", price: 970 },
-      ],
-      lyconFaceServices: [
-        { name: "Obočí", note: "", price1: 200, price2: 140 },
-        { name: "Horní ret", note: "", price1: 170, price2: 130 },
-        { name: "Brada", note: "", price1: 190, price2: 140 },
-        { name: "Tváře", note: "", price1: 220, price2: 170 },
-        { name: "Nosní dírky", note: "", price1: 180 },
-        { name: "Celý obličej", note: "(obočí, ret, tváře, brada)", price1: 650, price2: 580 },
-      ],
-      lyconBodyServices: [
-        { name: "Podpaží", price: 380 },
-        { name: "Třísla", price: 400 },
-      ],
-      lyconBody2Services: [
-        { name: "Lýtka/stehna", price: 440 },
-        { name: "Nohy ¾", price: 530 },
-        { name: "Celé nohy", price: 690 },
-        { name: "Paže", price: 420 },
-      ],
-    }
+<script setup>
+const eyebrowCosmeticServices = [
+  {
+    name: "Barvení oxidační barvou Refectocil + úprava voskem Lycon",
+    price: 300,
   },
-}
+]
+
+const lashesServices = [{ name: "Sundání řas", price: 250 }]
+
+const waxCosmeticServices = [{ name: "Pouze v rámci jiného ošetření (prodlužování řas či úprava obočí)", price: 100 }]
+
+const lashesVolumeServices = [
+  { name: "Nový set", price: 1200 },
+  { name: "Doplnění: ", note: "po dvou týdnech", price: 540 },
+  { name: "", note: "po třech týdnech", price: 640 },
+  { name: "", note: "po čtyřech týdnech", price: 740 },
+  { name: "", note: "více než po měsíci ", price: 870 },
+]
+
+const lashesMegaVolumeServices = [
+  { name: "Nový set", price: 1400 },
+  { name: "Doplnění: ", note: "po dvou týdnech", price: 640 },
+  { name: "", note: "po třech týdnech", price: 740 },
+  { name: "", note: "po čtyřech týdnech", price: 840 },
+  { name: "", note: "více než po měsíci ", price: 970 },
+]
+
+const lyconFaceServices = [
+  { name: "Obočí", note: "", price1: 200, price2: 140 },
+  { name: "Horní ret", note: "", price1: 170, price2: 130 },
+  { name: "Brada", note: "", price1: 190, price2: 140 },
+  { name: "Tváře", note: "", price1: 220, price2: 170 },
+  { name: "Nosní dírky", note: "", price1: 180 },
+  { name: "Celý obličej", note: "(obočí, ret, tváře, brada)", price1: 650, price2: 580 },
+]
+
+const lyconBodyServices = [
+  { name: "Podpaží", price: 380 },
+  { name: "Třísla", price: 400 },
+]
+
+const lyconBody2Services = [
+  { name: "Lýtka/stehna", price: 440 },
+  { name: "Nohy ¾", price: 530 },
+  { name: "Celé nohy", price: 690 },
+  { name: "Paže", price: 420 },
+]
 </script>
 
 <style scoped>

@@ -2,7 +2,7 @@
   <article>
     <h1>Lycon</h1>
     <div class="right">
-      <silent-box :image="article_images[0]" />
+      <silent-box :image="images[0]" />
     </div>
 
     <h2>Luxusní krémové vosky LYCON – australská epilační metoda s dlouholetou tradicí na českém trhu</h2>
@@ -26,7 +26,7 @@
       <h3>Proč LYCON?</h3>
 
       <div class="right">
-        <silent-box :image="article_images[1]" />
+        <silent-box :image="images[1]" />
       </div>
       <ul>
         <li>je vyroben z nejkvalitnějších přírodních ingrediencí</li>
@@ -42,13 +42,12 @@
         <li>zajišťuje výsledek hladké pokožky bez chloupků</li>
       </ul>
 
-      <h2 class="home">V salonu lze zakoupit produkty na domácí péči.</h2>
+      <h2>V salonu lze zakoupit produkty na domácí péči.</h2>
     </div>
     <div class="video-container">
       <iframe
         src="https://www.youtube.com/embed/CVLMBwVFmOc"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
@@ -57,7 +56,6 @@
       <iframe
         src="https://www.youtube.com/embed/7SyMALReO1U"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
@@ -65,35 +63,19 @@
   </article>
 </template>
 
-<script>
-export default {
-  name: "Lycon",
-  data() {
-    return {
-      article_images: [
-        {
-          src: require("@/assets/images/lycon/lycon_logo.png"),
-          description: "Krásný salon | Lycon",
-          alt: "Krásný salon | Lycon",
-        },
-        {
-          src: require("@/assets/images/lycon/lycon_face.jpeg"),
-          description: "Krásný salon | Lycon",
-          alt: "Krásný salon | Lycon",
-        },
-      ],
-    }
-  },
-}
+<script setup>
+import lycon_logo from "@/assets/images/lycon/lycon_logo.png"
+import lycon_face from "@/assets/images/lycon/lycon_face.jpeg"
+
+const images = [lycon_logo, lycon_face].map((src) => ({
+  src,
+  description: "Krásný salon | Lycon",
+  alt: "Krásný salon | Lycon",
+  thumbnailWidth: "380px",
+}))
 </script>
 
 <style>
-.gallery a {
-  display: inline-block;
-  width: 32%;
-  height: auto;
-}
-
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -106,10 +88,5 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.home {
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
 </style>

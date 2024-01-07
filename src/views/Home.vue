@@ -25,34 +25,33 @@
       pro případné přeobjednávání.
     </p>
     <p>Děkuji za pochopení.</p>
-    <div class="gall">
-      <silent-box :gallery="images" />
-    </div>
+    <br />
+    <silent-box class="gall" :gallery="images" lazy-loading />
     <p></p>
   </article>
 </template>
 
-<script>
-export default {
-  name: "Home",
-  data() {
-    return {
-      images: [],
-    }
-  },
-}
+<script setup>
+import rasy07 from "@/assets/images/lashes/07.jpeg"
+
+const images = [rasy07].map((src) => ({
+  src,
+  description: "Krásný salon | Prodlužování řas",
+  alt: "Krásný salon | Prodlužování řas",
+  thumbnailWidth: "400px",
+}))
 </script>
 
 <style>
-.gall #silentbox-gallery {
+.gall {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
-.gall .silentbox-item {
-  width: 48%;
-  height: auto;
+.gall img {
+  border-radius: 0.2em;
+  box-shadow: 0 0 6px #636363;
 }
 </style>

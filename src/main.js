@@ -1,18 +1,17 @@
-import Vue from "vue"
+import { createApp } from "vue"
 import App from "./App.vue"
 import router from "./router"
-import VueGtag from "vue-gtag"
+// import VueGtag from "vue-gtag"
 import VueSilentbox from "vue-silentbox"
+import "vue-silentbox/dist/style.css"
 
-Vue.config.productionTip = false
+// Vue.use(VueGtag, {
+//   config: { id: "G-HMQ5R408FB" },
+// })
 
-Vue.use(VueSilentbox)
+const myApp = createApp(App)
 
-Vue.use(VueGtag, {
-  config: { id: "G-HMQ5R408FB" },
-})
+myApp.use(router)
+myApp.use(VueSilentbox)
 
-new Vue({
-  router,
-  render: (h) => h(App),
-}).$mount("#app")
+myApp.mount("#app")

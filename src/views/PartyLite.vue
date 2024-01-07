@@ -33,55 +33,29 @@
         zastavit a svíčky si prohlédnout a ovonět :-)
       </p>
     </div>
-    <div class="gallery"><silent-box :gallery="images" /></div>
+    <silent-box class="gallery" :gallery="images" lazy-loading />
   </article>
 </template>
 
-<script>
-export default {
-  name: "PartyLite",
-  data() {
-    return {
-      images: [
-        {
-          src: require("@/assets/images/party/party1.jpeg"),
-          description: "Krásný salon | PartyLite",
-          alt: "Krásný salon | PartyLite",
-        },
-        {
-          src: require("@/assets/images/party/party2.jpeg"),
-          description: "Krásný salon | PartyLite",
-          alt: "Krásný salon | PartyLite",
-        },
-      ],
-    }
-  },
-}
+<script setup>
+import party1 from "@/assets/images/party/party1.webp"
+import party2 from "@/assets/images/party/party2.webp"
+
+const images = [party1, party2].map((src) => ({
+  src,
+  description: "Krásný salon | PartyLite",
+  alt: "Krásný salon | PartyLite",
+  thumbnailWidth: "380px",
+}))
 </script>
 
-<style>
-.gallery a {
-  display: inline-block;
-  width: 48%;
-  height: auto;
+<style lang="scss">
+.gallery img {
+  border-radius: 0.2em;
+  box-shadow: 0 0 6px #636363;
 }
 
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  margin-bottom: 2em;
-}
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.home {
-  margin-top: 2em;
-  margin-bottom: 2em;
+.gallery img:hover {
+  transform: scale(1.025);
 }
 </style>

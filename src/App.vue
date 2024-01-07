@@ -6,7 +6,7 @@
           <router-link to="/">logo</router-link>
         </p>
         <ul class="menu">
-          <template v-for="menu in $router.options.routes">
+          <template v-for="menu in router.options.routes">
             <li :key="menu.index" :class="{ dropdown: 'children' in menu }" v-if="!menu.metadata.hide">
               <router-link :to="menu.path">
                 {{ menu.metadata.title }}
@@ -20,7 +20,7 @@
           </template>
         </ul>
         <ul class="menu2">
-          <template v-for="menu in $router.options.routes">
+          <template v-for="menu in router.options.routes">
             <li v-if="!menu.metadata.hide" :key="menu.index">
               <router-link v-if="menu.name != 'services'" :to="menu.path">
                 {{ menu.metadata.title }}
@@ -76,10 +76,25 @@
   </div>
 </template>
 
+<script setup>
+import { useRouter } from "vue-router"
+
+const router = useRouter()
+</script>
+
 <style lang="scss">
 @import "./assets/scss/style.scss";
 
 a {
   cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.silentbox-item {
+  padding: 5px;
 }
 </style>

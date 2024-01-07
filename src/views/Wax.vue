@@ -10,7 +10,7 @@
         zdravotní i estetické.
       </p>
       <div class="right">
-        <silent-box :image="article_images[0]" />
+        <silent-box :image="image" />
       </div>
 
       <h2>Účinky parafínového zábalu</h2>
@@ -41,19 +41,13 @@
   </article>
 </template>
 
-<script>
-export default {
-  name: "Wax",
-  data() {
-    return {
-      article_images: [
-        {
-          src: require("@/assets/images/wax/parafin.jpg"),
-          description: "Krásný salon | Parafín",
-          alt: "Krásný salon | Parafín",
-        },
-      ],
-    }
-  },
+<script setup>
+import wax from "@/assets/images/wax/parafin.jpg"
+
+const image = {
+  src: wax,
+  description: "Krásný salon | Parafín",
+  alt: "Krásný salon | Parafín",
+  thumbnailWidth: "380px",
 }
 </script>

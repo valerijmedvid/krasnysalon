@@ -10,7 +10,7 @@
 
       <h2>Pro koho jsou prodloužené řasy vhodné?</h2>
       <div class="right">
-        <silent-box :image="article_images[2]" />
+        <silent-box :image="article_images[0]" lazy-loading />
       </div>
       <p>
         Prodlužování řas je vhodné pro ženy všech věkových kategorií, které chtějí dosáhnout skvělého vzhledu bez
@@ -37,7 +37,7 @@
         bezbolestná.
       </p>
       <div class="left">
-        <silent-box :image="article_images[1]" />
+        <silent-box :image="article_images[1]" lazy-loading />
       </div>
 
       <h2>Jak o řasy pečovat?</h2>
@@ -69,78 +69,58 @@
         předchozí domluvy bohužel není možné. Děkuji za pochopení.
       </p>
     </div>
-    <div class="gallery"><silent-box :gallery="images" /></div>
+    <silent-box class="gallery-lashes" :gallery="images" lazy-loading />
   </article>
 </template>
 
-<script>
-export default {
-  name: "Lashes",
-  data() {
-    return {
-      images: [
-        {
-          src: require("@/assets/images/lashes/rasy10.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy11.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy12.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy13.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy6.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy8.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy14.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-      ],
-      article_images: [
-        {
-          src: require("@/assets/images/lashes/rasy2.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy3.jpg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-        {
-          src: require("@/assets/images/lashes/rasy15.jpeg"),
-          description: "Krásný salon | Prodlužování řas",
-          alt: "Krásný salon | Prodlužování řas",
-        },
-      ],
-    }
-  },
-}
+<script setup>
+import article1 from "@/assets/images/lashes/article1.jpeg"
+import article2 from "@/assets/images/lashes/article2.jpg"
+
+import rasy01 from "@/assets/images/lashes/01.jpeg"
+import rasy02 from "@/assets/images/lashes/02.jpeg"
+import rasy03 from "@/assets/images/lashes/03.jpeg"
+import rasy04 from "@/assets/images/lashes/04.jpeg"
+import rasy05 from "@/assets/images/lashes/05.jpeg"
+import rasy06 from "@/assets/images/lashes/06.jpeg"
+import rasy07 from "@/assets/images/lashes/07.jpeg"
+import rasy08 from "@/assets/images/lashes/08.jpeg"
+import rasy09 from "@/assets/images/lashes/09.jpeg"
+import rasy10 from "@/assets/images/lashes/10.jpg"
+import rasy11 from "@/assets/images/lashes/11.jpg"
+
+const article_images = [article1, article2].map((src) => ({
+  src,
+  description: "Krásný salon | Prodlužování řas",
+  alt: "Krásný salon | Prodlužování řas",
+  thumbnailWidth: "380px",
+}))
+
+const images = [rasy01, rasy02, rasy03, rasy04, rasy05, rasy06, rasy07, rasy08, rasy09, rasy10, rasy11].map((src) => ({
+  src,
+  description: "Krásný salon | Prodlužování řas",
+  alt: "Krásný salon | Prodlužování řas",
+}))
 </script>
 
-<style>
-.gallery a {
-  display: inline-block;
-  width: 48%;
-  height: auto;
+<style lang="scss">
+.gallery-lashes {
+  column-count: 2;
+
+  @media screen and (max-width: 768px) {
+    column-count: 1;
+  }
+}
+
+.gallery-lashes > a > img {
+  margin: 0 auto 15px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 0.2em;
+  box-shadow: 0 0 6px #636363;
+}
+
+.gallery-lashes img:hover {
+  transform: scale(1.025);
 }
 </style>
