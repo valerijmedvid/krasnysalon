@@ -88,6 +88,9 @@ import rasy08 from "@/assets/images/lashes/08.jpeg"
 import rasy09 from "@/assets/images/lashes/09.jpeg"
 import rasy10 from "@/assets/images/lashes/10.jpg"
 import rasy11 from "@/assets/images/lashes/11.jpg"
+import rasy12 from "@/assets/images/lashes/12.jpeg"
+import rasy13 from "@/assets/images/lashes/13.jpeg"
+import rasy14 from "@/assets/images/lashes/14.jpeg"
 
 const article_images = [article1, article2].map((src) => ({
   src,
@@ -96,7 +99,22 @@ const article_images = [article1, article2].map((src) => ({
   thumbnailWidth: "380px",
 }))
 
-const images = [rasy01, rasy02, rasy03, rasy04, rasy05, rasy06, rasy07, rasy08, rasy09, rasy10, rasy11].map((src) => ({
+const images = [
+  rasy01,
+  rasy02,
+  rasy03,
+  rasy04,
+  rasy05,
+  rasy06,
+  rasy07,
+  rasy08,
+  rasy09,
+  rasy10,
+  rasy11,
+  rasy12,
+  rasy13,
+  rasy14,
+].map((src) => ({
   src,
   description: "Krásný salon | Prodlužování řas",
   alt: "Krásný salon | Prodlužování řas",
