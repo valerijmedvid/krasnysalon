@@ -26,32 +26,33 @@
     </p>
     <p>Děkuji za pochopení.</p>
     <br />
-    <silent-box class="gall" :gallery="images" lazy-loading />
     <p></p>
+    <silent-box class="gallery" :gallery="images" lazy-loading />
   </article>
 </template>
 
 <script setup>
-import rasy07 from "@/assets/images/lashes/07.jpeg"
+import salon01 from "@/assets/images/salon/01.jpeg"
+import salon02 from "@/assets/images/salon/02.jpeg"
 
-const images = [rasy07].map((src) => ({
+const images = [salon01, salon02].map((src) => ({
   src,
-  description: "Krásný salon | Prodlužování řas",
-  alt: "Krásný salon | Prodlužování řas",
-  thumbnailWidth: "400px",
+  description: "Krásný salon | Salon",
+  alt: "Krásný salon | Salon",
+  thumbnailWidth: "380px",
 }))
 </script>
 
 <style>
-.gall {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.gall img {
+.gallery-home > a > img {
+  margin: 0 auto 15px;
+  max-width: 800px;
+  width: 100%;
   border-radius: 0.2em;
   box-shadow: 0 0 6px #636363;
+}
+
+.gallery-home img:hover {
+  transform: scale(1.025);
 }
 </style>

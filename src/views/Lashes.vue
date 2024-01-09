@@ -91,6 +91,7 @@ import rasy11 from "@/assets/images/lashes/11.jpg"
 import rasy12 from "@/assets/images/lashes/12.jpeg"
 import rasy13 from "@/assets/images/lashes/13.jpeg"
 import rasy14 from "@/assets/images/lashes/14.jpeg"
+import rasy15 from "@/assets/images/lashes/15.jpeg"
 
 const article_images = [article1, article2].map((src) => ({
   src,
@@ -114,6 +115,7 @@ const images = [
   rasy12,
   rasy13,
   rasy14,
+  rasy15,
 ].map((src) => ({
   src,
   description: "Krásný salon | Prodlužování řas",

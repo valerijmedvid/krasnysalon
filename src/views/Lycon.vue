@@ -60,6 +60,7 @@
         allowfullscreen
       ></iframe>
     </div>
+    <silent-box class="gallery-lycon" :gallery="gallery" lazy-loading />
   </article>
 </template>
 
@@ -67,7 +68,16 @@
 import lycon_logo from "@/assets/images/lycon/lycon_logo.png"
 import lycon_face from "@/assets/images/lycon/lycon_face.jpeg"
 
+import lycon01 from "@/assets/images/lycon/01.jpeg"
+
 const images = [lycon_logo, lycon_face].map((src) => ({
+  src,
+  description: "Krásný salon | Lycon",
+  alt: "Krásný salon | Lycon",
+  thumbnailWidth: "380px",
+}))
+
+const gallery = [lycon01].map((src) => ({
   src,
   description: "Krásný salon | Lycon",
   alt: "Krásný salon | Lycon",
@@ -82,11 +92,32 @@ const images = [lycon_logo, lycon_face].map((src) => ({
   height: 0;
   margin-bottom: 2em;
 }
+
 .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.gallery-lycon {
+  column-count: 2;
+
+  @media screen and (max-width: 768px) {
+    column-count: 1;
+  }
+}
+
+.gallery-lycon > a > img {
+  margin: 0 auto 15px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 0.2em;
+  box-shadow: 0 0 6px #636363;
+}
+
+.gallery-lycon img:hover {
+  transform: scale(1.025);
 }
 </style>
