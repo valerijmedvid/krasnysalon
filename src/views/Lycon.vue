@@ -69,6 +69,7 @@ import lycon_logo from "@/assets/images/lycon/lycon_logo.png"
 import lycon_face from "@/assets/images/lycon/lycon_face.jpeg"
 
 import lycon01 from "@/assets/images/lycon/01.jpeg"
+import lycon02 from "@/assets/images/lycon/02.jpeg"
 
 const images = [lycon_logo, lycon_face].map((src) => ({
   src,
@@ -77,7 +78,7 @@ const images = [lycon_logo, lycon_face].map((src) => ({
   thumbnailWidth: "380px",
 }))
 
-const gallery = [lycon01].map((src) => ({
+const gallery = [lycon01, lycon02].map((src) => ({
   src,
   description: "Krásný salon | Lycon",
   alt: "Krásný salon | Lycon",
@@ -101,18 +102,23 @@ const gallery = [lycon01].map((src) => ({
   height: 100%;
 }
 
-.gallery-lycon {
+/* .gallery-lycon {
   column-count: 2;
 
   @media screen and (max-width: 768px) {
     column-count: 1;
   }
-}
+} */
 
-.gallery-lycon > a > img {
+/* .gallery-lycon > a > img {
   margin: 0 auto 15px;
   max-width: 800px;
   width: 100%;
+  border-radius: 0.2em;
+  box-shadow: 0 0 6px #636363;
+} */
+
+.gallery-lycon img {
   border-radius: 0.2em;
   box-shadow: 0 0 6px #636363;
 }
