@@ -1,7 +1,7 @@
 <template>
   <article class="group">
     <h1>Ceník služeb</h1>
-    <p style="margin: 0; margin-bottom: 2em">Platný od 1.11.2022</p>
+    <p style="margin: 0; margin-bottom: 2em">Platný od 1.3.2024</p>
 
     <h2>Prodlužování řas</h2>
     <h3>Volume 3-6D</h3>
@@ -272,7 +272,9 @@ const lashesServices = [{ name: "Sundání řas", price: 250 }]
 
 const lashesOtherServices = [{ name: "Doplnění od jiné stylistky", price: 790 }]
 
-const waxCosmeticServices = [{ name: "Pouze v rámci jiného ošetření (prodlužování řas či úprava obočí)", price: 100 }]
+const waxCosmeticServices = [
+  { name: "Pouze v rámci jiného ošetření (prodlužování řas či kosmetického ošetření)", price: 100 },
+]
 
 const lashesVolumeServices = [
   { name: "Nový set", price: 1200 },
