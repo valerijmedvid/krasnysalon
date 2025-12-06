@@ -150,22 +150,6 @@
       </tr>
     </table>
 
-    <h2>Parafínový zábal na ruce</h2>
-    <table>
-      <tr v-for="service in waxCosmeticServices" :key="service.index">
-        <td>
-          <p>
-            {{ service.name }}
-          </p>
-        </td>
-        <td>{{ service.price }} Kč</td>
-      </tr>
-      <tr class="empty">
-        <td><br /></td>
-        <td></td>
-      </tr>
-    </table>
-
     <h2>Epilace Lycon <img :src="lycon" alt="lycon" width="90" style="padding-left: 1em" /></h2>
 
     <table class="lycon">
@@ -238,7 +222,7 @@ import lycon from "@/assets/images/lycon/lycon_logo.png"
 const eyebrowCosmeticServices = [
   {
     name: "Barvení oxidační barvou Refectocil + úprava voskem Lycon",
-    price: 300,
+    price: 350,
   },
 ]
 
@@ -247,70 +231,67 @@ const cosmeticServices = [
     name: "Základní ošetření",
     interval: "90 min",
     note: "úprava obočí, povrchové čištění, enzymatický peeling, masáž obličeje, hluboké čištění, pleťové, sérum, maska, krém",
-    price: 830,
+    price: 930,
   },
   {
     name: "Ošetření mastné/smíšené pleti",
     interval: "90 min",
     note: "úprava obočí, povrchové čištění, enzymatický peeling, hluboké čištění, pleťové sérum, maska, krém",
-    price: 790,
+    price: 890,
   },
   {
     name: "Ošetření suché/zralé pleti",
     interval: "90-120 min",
     note: "základní ošetření + ošetření dekoltu (masáž + maska)",
-    price: 930,
+    price: 1030,
   },
 ]
 
 const cosmeticOtherServices = [
-  { name: "Barvení řas", price: 100 },
-  { name: "Barvení obočí", price: 100 },
+  { name: "Barvení řas", price: 120 },
+  { name: "Barvení obočí", price: 120 },
 ]
 
-const lashesServices = [{ name: "Sundání řas", price: 250 }]
+const lashesServices = [{ name: "Sundání řas", price: 290 }]
 
-const lashesOtherServices = [{ name: "Doplnění od jiné stylistky", price: 790 }]
+const lashesOtherServices = [{ name: "Doplnění od jiné stylistky", price: 990 }]
 
-const waxCosmeticServices = [
-  { name: "Pouze v rámci jiného ošetření (prodlužování řas či kosmetického ošetření)", price: 100 },
-]
 
 const lashesVolumeServices = [
-  { name: "Nový set", price: 1200 },
-  { name: "Doplnění: ", note: "po dvou týdnech", price: 590 },
-  { name: "", note: "po třech týdnech", price: 690 },
-  { name: "", note: "po čtyřech týdnech", price: 790 },
-  { name: "", note: "více než po měsíci ", price: 920 },
+  { name: "Nový set", price: 1350 },
+  { name: "Doplnění: ", note: "po dvou týdnech", price: 660 },
+  { name: "", note: "po třech týdnech", price: 760 },
+  { name: "", note: "po čtyřech týdnech", price: 860 },
+  { name: "", note: "více než po měsíci ", price: 990 },
 ]
 
 const lashesMegaVolumeServices = [
-  { name: "Nový set", price: 1400 },
-  { name: "Doplnění: ", note: "po dvou týdnech", price: 690 },
-  { name: "", note: "po třech týdnech", price: 790 },
-  { name: "", note: "po čtyřech týdnech", price: 890 },
-  { name: "", note: "více než po měsíci ", price: 1020 },
+  { name: "Nový set", price: 1450 },
+  { name: "Doplnění: ", note: "po dvou týdnech", price: 760 },
+  { name: "", note: "po třech týdnech", price: 860 },
+  { name: "", note: "po čtyřech týdnech", price: 960 },
+  { name: "", note: "více než po měsíci ", price: 1090 },
 ]
 
 const lyconFaceServices = [
-  { name: "Obočí", note: "", price1: 200, price2: 140 },
-  { name: "Horní ret", note: "", price1: 170, price2: 130 },
-  { name: "Brada", note: "", price1: 190, price2: 140 },
-  { name: "Tváře", note: "", price1: 220, price2: 170 },
-  { name: "Nosní dírky", note: "", price1: 180 },
-  { name: "Celý obličej", note: "(obočí, ret, tváře, brada)", price1: 650, price2: 580 },
+  { name: "Obočí", note: "", price1: 230, price2: 170 },
+  { name: "Horní ret", note: "", price1: 200, price2: 160 },
+  { name: "Brada", note: "", price1: 220, price2: 170 },
+  { name: "Tváře", note: "", price1: 250, price2: 200 },
+  { name: "Nosní dírky", note: "", price1: 210 },
+  { name: "Celý obličej", note: "(obočí, ret, tváře, brada)", price1: 680, price2: 610 },
 ]
 
 const lyconBodyServices = [
-  { name: "Podpaží", price: 420 },
-  { name: "Třísla", price: 420 },
+  { name: "Podpaží", price: 450 },
+  { name: "Třísla", price: 450 },
 ]
 
 const lyconBody2Services = [
-  { name: "Lýtka/stehna", price: 460 },
-  { name: "Nohy ¾", price: 560 },
-  { name: "Celé nohy", price: 770 },
-  { name: "Paže", price: 420 },
+  { name: "Lýtka/stehna", price: 490 },
+  { name: "Nohy ¾", price: 590 },
+  { name: "Celé nohy", price: 800 },
+  { name: "Paže", price: 450 },
 ]
 </script>
 
