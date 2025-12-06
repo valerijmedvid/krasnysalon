@@ -266,7 +266,7 @@ const lashesVolumeServices = [
 ]
 
 const lashesMegaVolumeServices = [
-  { name: "Nový set", price: 1450 },
+  { name: "Nový set", price: 1550 },
   { name: "Doplnění: ", note: "po dvou týdnech", price: 760 },
   { name: "", note: "po třech týdnech", price: 860 },
   { name: "", note: "po čtyřech týdnech", price: 960 },
