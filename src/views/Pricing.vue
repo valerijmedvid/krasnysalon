@@ -1,7 +1,7 @@
 <template>
   <article class="group">
     <h1>Ceník služeb</h1>
-    <p style="margin: 0; margin-bottom: 2em">Platný od 1.3.2024</p>
+    <p style="margin: 0; margin-bottom: 2em">Platný od 1.1.2026</p>
 
     <h2>Prodlužování řas</h2>
     <h3>Volume 3-6D</h3>
