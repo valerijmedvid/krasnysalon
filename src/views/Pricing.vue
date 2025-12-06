@@ -94,7 +94,7 @@
         </tr>
       </template>
     </table>
-    <p><strong>Pokud přijde klientka na běžné doplnění bez řas, bude jí účtována cena 920,- (1020,-) !</strong></p>
+    <p><strong>Pokud přijde klientka na běžné doplnění bez řas, bude jí účtována cena 990,- (1090,-) !</strong></p>
 
     <h2>Kosmetické ošetření <img :src="syncare" alt="syncare" width="90" style="padding-left: 1em" /></h2>
     <table>
