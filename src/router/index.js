@@ -28,12 +28,6 @@ const routes = [
         metadata: { title: "Objemové prodlužování řas" },
       },
       {
-        path: "/parafinovy-zabal",
-        name: "wax",
-        component: () => import("../views/Wax.vue"),
-        metadata: { title: "Parafínový zábal na ruce" },
-      },
-      {
         path: "/epilace-lycon",
         name: "epilace-lycon",
         component: () => import("../views/Lycon.vue"),
